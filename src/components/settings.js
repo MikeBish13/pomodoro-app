@@ -76,7 +76,7 @@ export default function Settings({
               <p>{pomodoro}</p>
               <div className="toggles">
                 <svg
-                  onClick={pomodoro > 60 ? increment(setPomodoro) : null}
+                  onClick={pomodoro < 60 ? increment(setPomodoro) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
