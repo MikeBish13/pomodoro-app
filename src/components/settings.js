@@ -76,7 +76,7 @@ export default function Settings({
               <p>{pomodoro}</p>
               <div className="toggles">
                 <svg
-                  onClick={pomodoro < 60 ? increment(setPomodoro) : null}
+                  onClick={pomodoro < 60 ? () => increment(setPomodoro) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
@@ -90,7 +90,7 @@ export default function Settings({
                   />
                 </svg>
                 <svg
-                  onClick={() => decrement(setPomodoro)}
+                  onClick={pomodoro > 0 ? () => decrement(setPomodoro) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
@@ -112,7 +112,7 @@ export default function Settings({
               <p>{short}</p>
               <div className="toggles">
                 <svg
-                  onClick={() => increment(setShort)}
+                  onClick={short < 60 ? () => increment(setShort) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
@@ -126,7 +126,7 @@ export default function Settings({
                   />
                 </svg>
                 <svg
-                  onClick={() => decrement(setShort)}
+                  onClick={short > 0 ? () => decrement(setShort) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
@@ -148,7 +148,7 @@ export default function Settings({
               <p>{long}</p>
               <div className="toggles">
                 <svg
-                  onClick={() => increment(setLong)}
+                  onClick={long < 60 ? () => increment(setLong) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
@@ -162,7 +162,7 @@ export default function Settings({
                   />
                 </svg>
                 <svg
-                  onClick={() => decrement(setLong)}
+                  onClick={long > 0 ? () => decrement(setLong) : null}
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="7"
