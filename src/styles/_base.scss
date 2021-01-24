@@ -1,0 +1,143 @@
+// Set up
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto+Slab:wght@700&family=Space+Mono:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e213f;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+// Variables
+:root {
+  --clr-red: #f87070;
+  --clr-red-hover: #d88989;
+  --clr-teal: #70f3f8;
+  --clr-purple: #d881f8;
+  --clr-light-blue: #d7e0ff;
+  --clr-dark-blue: #1e213f;
+  --clr-white: #ffffff;
+  --clr-light-gray: #eff1fa;
+  --clr-very-dark-blue: #161932;
+  --clr-gray-border: #e3e1e1;
+}
+
+//Mixins
+@mixin mq($breakpoint) {
+  @if $breakpoint==tablet {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktop {
+    @media (min-width: 1000px) {
+      @content;
+    }
+  }
+}
+
+// Typography
+h1 {
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -4px;
+
+  @include mq(desktop) {
+    font-size: 100px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 700;
+
+  @include mq(tablet) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  @include mq(tablet) {
+    font-size: 13px;
+  }
+}
+
+p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+//Font Changes
+.App.kumbh {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    button {
+      font-family: "Kumbh Sans", sans-serif;
+    }
+  }
+  //Roboto
+  .App.roboto {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    button {
+      font-family: "Roboto Slab", sans-serif;
+    }
+  }
+  //Space
+  .App.space {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    button {
+      font-family: "Space Mono", sans-serif;
+    }
+  
+    h1 {
+        letter-spacing: -5px;
+    }
+  }

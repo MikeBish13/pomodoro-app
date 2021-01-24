@@ -1,0 +1,75 @@
+.page-title {
+  margin-top: 32px;
+
+  @include mq(desktop) {
+      margin-top: 48px;
+  }
+}
+
+.control-buttons {
+  margin: 45px auto;
+  width: 87%;
+  background: var(--clr-very-dark-blue);
+  padding: 8px 6px;
+  border-radius: 31px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 373px;
+
+  @include mq(tablet) {
+      margin: 55px auto 109px;
+  }
+
+  @include mq(desktop) {
+      margin-bottom: 45px;
+  }
+
+  .control-button {
+    cursor: pointer;
+    background: none;
+    text-transform: lowercase;
+    border-radius: 31px;
+    border: none;
+    color: #d7e0ff8a;
+    font-weight: 700;
+    font-size: 12px;
+    outline: transparent;
+
+    @include mq(tablet) {
+      font-size: 13px;
+    }
+
+    &.active {
+      background: var(--clr-red);
+      color: var(--clr-dark-blue);
+      padding: 16px 18px;
+      text-align: center;
+
+      @include mq(tablet) {
+        padding: 14px 30px;
+      }
+
+      &.purple {
+        background: var(--clr-purple);
+      }
+      &.red {
+        background: var(--clr-red);
+      }
+      &.teal {
+        background: var(--clr-teal);
+      }
+    }
+  }
+}
+
+.settings-wheel {
+  cursor: pointer;
+
+  @include mq(tablet) {
+      margin-bottom: 90px;
+  }
+  @include mq(desktop) {
+      margin-bottom: 63px;
+  }
+}
