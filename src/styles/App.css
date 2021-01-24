@@ -9,6 +9,7 @@
 body {
   background: #1e213f;
   text-align: center;
+  margin: 0;
 }
 
 h1,
@@ -620,7 +621,7 @@ p {
 
 @media (min-width: 1000px) {
   .settings-wheel {
-    margin-bottom: 63px;
+    margin-bottom: 56px;
   }
 }
 /*# sourceMappingURL=App.css.map */
