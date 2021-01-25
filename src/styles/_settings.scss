@@ -155,13 +155,13 @@
   padding: 3px;
 
   &.kumbh {
-    font-family: "Kumbh Sans", sans-serif;
+    font-family: "Kumbh Sans", sans-serif !important;
   }
   &.roboto {
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Roboto Slab", sans-serif !important;
   }
   &.space {
-    font-family: "Space Mono", sans-serif;
+    font-family: "Space Mono", sans-serif !important;
   }
   &.active {
     color: var(--clr-white);

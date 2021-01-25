@@ -447,15 +447,15 @@ p {
 }
 
 .font-button.kumbh {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans", sans-serif !important;
 }
 
 .font-button.roboto {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto Slab", sans-serif !important;
 }
 
 .font-button.space {
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Mono", sans-serif !important;
 }
 
 .font-button.active {
